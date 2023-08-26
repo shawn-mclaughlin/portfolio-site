@@ -1,27 +1,27 @@
 interface RoleInfo {
-    title:string
-    startDate: string
-    endDate: string
-    responsibilities:string[]
+  title: string;
+  startDate: string;
+  endDate: string;
+  responsibilities: string[];
 }
 
 interface CompanyInfo {
-    name: string
-    location: string
-    logo: string
-    roles: RoleInfo[]
+  name: string;
+  location: string;
+  logo: string;
+  roles: RoleInfo[];
 }
 
 interface CompanyCardProps {
-    companyInfo:CompanyInfo
+  companyInfo: CompanyInfo;
 }
 
-export default function CompanyCard(props:CompanyCardProps) {
-    const {companyInfo} = props
+export default function CompanyCard(props: CompanyCardProps) {
+  const { companyInfo } = props;
 
-    return (
-        <div className="flex">
-            <img src={companyInfo.logo} alt="junk"/>
-        </div>
-    )
+  return (
+    <div className="flex">
+      <img src={companyInfo.logo} alt="junk" />
+    </div>
+  );
 }

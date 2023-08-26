@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import "./index.css"
+import "./global.css"
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import TechnicalSkillsPage from "./skills/skills-page.tsx";
 import Layout from "./layout/layout.tsx";

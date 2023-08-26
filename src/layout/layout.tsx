@@ -7,7 +7,7 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps) {
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col h-screen w-4/5 m-auto shadow-2xl">
             <nav className={"flex justify-evenly px-6 py-1 bg-sky-700 text-white h-10 items-center"}>
                 <Link to={"/"}>Shawn McLaughlin</Link>
                 <Link to={"/skills"}>Skills</Link>
@@ -15,7 +15,7 @@ export default function Layout(props: LayoutProps) {
                 <Link to={"/qualifications"}>Qualifications</Link>
                 <Link to={"/personal"}>Personal</Link>
             </nav>
-            <div className="w-screen lg:w-10/12 m-auto h-auto shadow-2xl flex-grow">
+            <div className="flex-grow">
                 {props.children}
             </div>
         </div>

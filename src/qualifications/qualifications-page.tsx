@@ -1,18 +1,17 @@
 export default function QualificationsPage() {
   return (
-    <div>
-      <div className="m-4">
-        <h1 className="text-3xl">Education</h1>
+    <>
+      <section className="mb-2">
+        <h2 className="text-2xl">Education</h2>
         <p>
-          I studied at Temple Universitry where I graduated in 2012 with a BS in
-          Computer Science
+          I studied at Temple University where I graduated in 2012 with a BS in Computer Science
         </p>
-      </div>
+      </section>
 
-      <div className="m-4">
-        <h1 className="text-3xl">Additional Qualifications</h1>
-        <p>Japanaese Language Proficiency Test N3 Certified - January 2020</p>
-      </div>
-    </div>
+      <section className="mb-2">
+        <h1 className="text-2xl">Additional Qualifications</h1>
+        <p>Japanese Language Proficiency Test N3 Certified - January 2020</p>
+      </section>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 import SkillCard from "./skill-card.tsx";
 import Skill from "./skill.ts";
 
-export default function TechnicalSkillsPage() {
+export default function SkillGrid() {
   const skills: Skill[] = [
     {
       name: "Go",
@@ -55,13 +55,12 @@ export default function TechnicalSkillsPage() {
   ];
 
   return (
-    <div className="p-4">
-      <h1 className="text-3xl">Skills</h1>
-      <div className="m-auto grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 ">
+    <>
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {skills.map((skill) => (
           <SkillCard skill={skill} />
         ))}
       </div>
-    </div>
+    </>
   );
 }

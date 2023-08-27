@@ -1,47 +1,52 @@
-import { useState } from "react";
-import { FaAngleDown } from "react-icons/fa6";
-import { SiGo } from "react-icons/si";
 import Skill from "./skill.ts";
+import ExpandingCard from "../common/expanding-card.tsx";
 
 interface SkillCardProps {
   skill: Skill;
 }
 
 export default function SkillCard(props: SkillCardProps) {
-  const [expanded, setExpanded] = useState(false);
   const { skill } = props;
 
   const renderSkillMeter = (skillLevel: number) => {
-    switch (skillLevel) {
-      case 1:
-        return <div className={`mx-1 my-auto h-4 w-2/6 rounded-full bg-sky-600`} />;
-      case 2:
-        return <div className={`mx-1 my-auto h-4 w-4/6 rounded-full bg-sky-600`} />;
-      case 3:
-        return <div className={`mx-1 my-auto h-4 w-full rounded-full bg-sky-600`} />;
-      default:
-        return <div />;
+    let barFillWidth = "w-0";
+    if (skillLevel === 1) {
+      barFillWidth = "w-1/3";
+    } else if (skillLevel === 2) {
+      barFillWidth = "w-2/3";
+    } else if (skillLevel === 3) {
+      barFillWidth = "w-full";
     }
+    return (
+      <div className="flex h-6 rounded-full bg-sky-200">
+        <div className={`mx-1 my-auto h-4 rounded-full bg-sky-600 ${barFillWidth}`} />
+      </div>
+    );
   };
 
-  return (
-    <div className="rounded border bg-white p-2 shadow-md">
-      <div className="flex items-center justify-between">
-        <SiGo size={48} className="fill-sky-700" />
-        <p>{skill.name}</p>
-        <FaAngleDown onClick={() => setExpanded(!expanded)} />
-      </div>
-      <div className="flex h-6 w-full rounded-full bg-sky-200">
-        {renderSkillMeter(skill.skillLevel)}
-      </div>
-      <div
-        className={`duration-400 overflow-hidden transition-[max-height] ease-in ${
-          expanded ? "max-h-40" : "max-h-0"
-        }`}
-      >
+  // TODO Check into alternatives for getting icons, URLs, downloading the colored SVG manually?
+  const SkillCardHeader = () => {
+    return (
+      <>
+        <div className="mb-2 flex items-center">
+          {skill.icon && skill.icon({ size: 48, color: skill.iconColor })}
+          <p className={"flex-grow text-center"}>{skill.name}</p>
+        </div>
+        <div className="flex-grow">{renderSkillMeter(skill.skillLevel)}</div>
+      </>
+    );
+  };
+
+  const SkillCardDetails = () => {
+    return (
+      <>
         <p>{skill.description}</p>
-        <a href={skill.url}>Learn More</a>
-      </div>
-    </div>
-  );
+        <a href={skill.url} target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      </>
+    );
+  };
+
+  return <ExpandingCard header={<SkillCardHeader />} collapsed={<SkillCardDetails />} />;
 }

@@ -1,6 +1,4 @@
-import { FaAngleDown } from "react-icons/fa6";
-import { useState } from "react";
-import { CompanyInfo, RoleInfo } from "./company-info.ts";
+import { CompanyInfo } from "./company-info.ts";
 import ExpandingCard from "../common/expanding-card.tsx";
 
 interface CompanyCardProps {

@@ -82,8 +82,8 @@ export default function SkillGrid() {
   return (
     <>
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-        {skills.map((skill) => (
-          <SkillCard skill={skill} />
+        {skills.map((skill, index) => (
+          <SkillCard key={index} skill={skill} />
         ))}
       </div>
     </>

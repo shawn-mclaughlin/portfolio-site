@@ -22,7 +22,6 @@ export default function CompanyCard(props: CompanyCardProps) {
           <p className="text-2xl">{company.name}</p>
           <p className="opacity-60">{company.location}</p>
           <p className="opacity-60">{`${companyStartDate} - ${companyEndDate}`}</p>
-          <p></p>
         </div>
       </div>
     );
@@ -31,13 +30,13 @@ export default function CompanyCard(props: CompanyCardProps) {
   const CompanyDetails = () => {
     return (
       <>
-        {company.roles.map((r) => (
-          <div className={"ml-4 mt-4"}>
+        {company.roles.map((r, index) => (
+          <div key={`company-${index}`} className={"ml-4 mt-4"}>
             <p className="text-2xl">{r.title}</p>
             <p className="opacity-90">{`${r.startDate} - ${r.endDate}`}</p>
             <ul className="list-inside list-disc">
-              {r.responsibilities.map((responsibility) => (
-                <li>{responsibility}</li>
+              {r.responsibilities.map((responsibility, responsibilityIndex) => (
+                <li key={`company-${index}-${responsibilityIndex}`}>{responsibility}</li>
               ))}
             </ul>
           </div>

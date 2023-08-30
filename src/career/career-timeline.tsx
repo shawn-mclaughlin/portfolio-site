@@ -6,8 +6,8 @@ export default function CareerTimeline() {
 
   return (
     <>
-      {employmentHistory.map((company) => (
-        <div className="mb-2">
+      {employmentHistory.map((company, index) => (
+        <div className="mb-2" key={index}>
           <CompanyCard company={company} />
         </div>
       ))}

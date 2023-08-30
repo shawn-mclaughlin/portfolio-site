@@ -15,7 +15,7 @@ export default function NavBar(props: NavBarProps) {
 
   return (
     <header className="sticky top-0 z-50 bg-sky-700">
-      <nav className={"ml-2 items-baseline py-2 lg:mx-auto lg:w-11/12"}>
+      <nav className={"ml-2 items-baseline py-2 lg:mx-auto lg:max-w-7xl"}>
         <button className="m-2 lg:hidden" onClick={() => setExpanded(!expanded)}>
           <FaBars className={"fill-white align-middle text-2xl"} />
         </button>

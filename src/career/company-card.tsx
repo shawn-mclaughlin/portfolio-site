@@ -33,7 +33,7 @@ export default function CompanyCard(props: CompanyCardProps) {
         {company.roles.map((r, index) => (
           <div key={`company-${index}`} className={"ml-4 mt-4"}>
             <p className="text-2xl">{r.title}</p>
-            <p className="opacity-90">{`${r.startDate} - ${r.endDate}`}</p>
+            <p className="opacity-80">{`${r.startDate} - ${r.endDate}`}</p>
             <ul className="list-inside list-disc">
               {r.responsibilities.map((responsibility, responsibilityIndex) => (
                 <li key={`company-${index}-${responsibilityIndex}`}>{responsibility}</li>

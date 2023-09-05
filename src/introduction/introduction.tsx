@@ -1,12 +1,12 @@
 export default function Introduction() {
   return (
     <div className="lg:flex">
-      <div className="mb-4 lg:w-1/2">
+      <div className="mb-4 lg:w-5/12">
         <p className="text-6xl">Hello, world!</p>
         <img
           src="src/introduction/me-and-owl.jpg"
           alt="me with an owl in nara, japan"
-          className="rounded-2xl object-contain"
+          className="h-80 w-full rounded-2xl object-cover object-center lg:h-72"
         />
       </div>
       <section className="lg:ml-4 lg:w-1/2">

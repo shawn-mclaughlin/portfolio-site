@@ -3,7 +3,7 @@ import Subsection from "./common/subsection.tsx";
 import Introduction from "./introduction/introduction.tsx";
 import SkillGrid from "./skills/skill-grid.tsx";
 import CareerTimeline from "./career/career-timeline.tsx";
-import QualificationsPage from "./qualifications/qualifications-page.tsx";
+import Qualifications from "./qualifications/qualifications.tsx";
 
 export default function App() {
   const sections = [
@@ -20,7 +20,7 @@ export default function App() {
     {
       title: "Qualifications",
       id: "qualifications",
-      element: <QualificationsPage />,
+      element: <Qualifications />,
     },
   ];
 

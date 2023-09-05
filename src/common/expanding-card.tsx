@@ -12,7 +12,7 @@ export default function ExpandingCard(props: ExpandingCardProps) {
   const { header, collapsed } = props;
 
   return (
-    <div className="h-fit rounded-md border bg-white p-4 shadow-lg">
+    <div className="h-fit overflow-hidden rounded-lg border bg-white p-4 shadow-lg">
       <div className="flex items-center">
         <div className={"flex-grow"}>{header}</div>
         <div

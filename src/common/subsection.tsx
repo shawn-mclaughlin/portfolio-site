@@ -11,7 +11,7 @@ export default function Subsection(props: SubsectionProps) {
 
   // TODO Refactor heading to use composition pattern
   return (
-    <section id={id} className="mx-4 mb-8 mt-4 scroll-mt-20">
+    <section id={id} className="scroll-mt-20 px-4 pb-8 pt-4">
       {heading ? <h1 className="mb-2 text-4xl">{heading}</h1> : null}
       {children}
     </section>

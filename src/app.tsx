@@ -9,7 +9,7 @@ export default function App() {
   const sections = [
     {
       title: "Skills",
-      id: "skills",
+      id: "skillset",
       element: <SkillGrid />,
     },
     {
@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen antialiased">
-      <NavBar sectionDetails={sections} />
+      <NavBar />
       <main className="m-auto max-w-7xl flex-grow">
         <Subsection id={"home"}>
           <Introduction />

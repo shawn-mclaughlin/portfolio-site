@@ -3,7 +3,7 @@ import Subsection from "./common/subsection.tsx";
 import SkillGrid from "./skills/skill-grid.tsx";
 import CareerTimeline from "./career/career-timeline.tsx";
 import Qualifications from "./qualifications/qualifications.tsx";
-import AboutMe from "./about.tsx";
+import AboutMe from "./about/about.tsx";
 
 export default function App() {
   const sections = [

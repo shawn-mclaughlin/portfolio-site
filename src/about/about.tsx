@@ -11,6 +11,7 @@ export default function AboutMe() {
         className="w-full object-cover object-center lg:h-auto lg:w-1/2"
       />
       <div className="px-8 py-24 lg:w-1/2 lg:pl-8">
+        //TODO Rewrite this section
         <h1 className="text-4xl">About Me</h1>
         <p className="leading-relaxed">My name is Shawn McLaughlin.</p>
         <p className="leading-relaxed">
@@ -24,6 +25,10 @@ export default function AboutMe() {
           java programs, I loved the feeling of creating something from just the thoughts and ideas
           in my head. I was hooked and I knew I wanted to write code for a living. I went to college
           for computer science and never looked back.
+        </p>
+        <p>
+          I studied at Temple University where I received a degree in Computer Science. I've also
+          pass the N3 level of the Japanese Language Proficiency Test
         </p>
         <p className="leading-relaxed">
           Currently, I live and work in the greater Philadelphia area.

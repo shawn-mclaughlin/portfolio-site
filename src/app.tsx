@@ -1,9 +1,9 @@
-import NavBar from "./layout/nav-bar.tsx";
+import NavBar from "./nav-bar.tsx";
 import Subsection from "./common/subsection.tsx";
-import Introduction from "./introduction/introduction.tsx";
 import SkillGrid from "./skills/skill-grid.tsx";
 import CareerTimeline from "./career/career-timeline.tsx";
 import Qualifications from "./qualifications/qualifications.tsx";
+import AboutMe from "./about.tsx";
 
 export default function App() {
   const sections = [
@@ -27,10 +27,8 @@ export default function App() {
   return (
     <div className="min-h-screen antialiased">
       <NavBar />
+      <AboutMe />
       <main className="m-auto max-w-7xl flex-grow">
-        <Subsection id={"home"}>
-          <Introduction />
-        </Subsection>
         {sections.map((section) => {
           return (
             <Subsection id={section.id} key={section.id} heading={section.title}>

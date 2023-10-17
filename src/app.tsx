@@ -1,17 +1,12 @@
 import NavBar from "./nav-bar.tsx";
 import Subsection from "./common/subsection.tsx";
-import SkillGrid from "./skills/skill-grid.tsx";
+import Skills from "./skills/skills.tsx";
 import CareerTimeline from "./career/career-timeline.tsx";
 import Qualifications from "./qualifications/qualifications.tsx";
 import AboutMe from "./about/about.tsx";
 
 export default function App() {
   const sections = [
-    {
-      title: "Skills",
-      id: "skillset",
-      element: <SkillGrid />,
-    },
     {
       title: "Career",
       id: "career",
@@ -28,6 +23,7 @@ export default function App() {
     <div className="min-h-screen antialiased">
       <NavBar />
       <AboutMe />
+      <Skills />
       <main className="m-auto max-w-7xl flex-grow">
         {sections.map((section) => {
           return (

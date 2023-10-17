@@ -11,7 +11,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 
-export default function SkillGrid() {
+export default function Skills() {
   const skills: Skill[] = [
     {
       name: "Go",
@@ -80,12 +80,15 @@ export default function SkillGrid() {
   ];
 
   return (
-    <>
-      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+    <section id="skills" className="mx-auto max-w-7xl scroll-mt-24 py-24">
+      <h1 className="text-4xl">Skillset</h1>
+      <div className="grid place-items-center gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {skills.map((skill, index) => (
-          <SkillCard key={index} skill={skill} />
+          <div className="w-full">
+            <SkillCard key={index} skill={skill} />
+          </div>
         ))}
       </div>
-    </>
+    </section>
   );
 }

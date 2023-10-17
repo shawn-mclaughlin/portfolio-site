@@ -1,6 +1,8 @@
 export default function AboutMe() {
   //TODO Look into tailwind typography package
 
+  //TODO Rewrite this section
+
   //TODO Ideally, I want the typography to use the same margin logic as the navbar but starting from
   // the 1/2 and then have the image run to the left edge without a leading margin
   return (
@@ -11,7 +13,6 @@ export default function AboutMe() {
         className="w-full object-cover object-center lg:h-auto lg:w-1/2"
       />
       <div className="px-8 py-24 lg:w-1/2 lg:pl-8">
-        //TODO Rewrite this section
         <h1 className="text-4xl">About Me</h1>
         <p className="leading-relaxed">My name is Shawn McLaughlin.</p>
         <p className="leading-relaxed">

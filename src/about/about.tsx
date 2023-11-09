@@ -6,34 +6,39 @@ export default function AboutMe() {
   //TODO Ideally, I want the typography to use the same margin logic as the navbar but starting from
   // the 1/2 and then have the image run to the left edge without a leading margin
   return (
-    <section id="about" className="mx-auto max-w-7xl scroll-mt-24 lg:flex">
+    <section id="about" className="relative scroll-mt-24 lg:flex">
       <img
         src="src/about/me-and-owl.jpg"
-        alt="me with an owl in nara, japan"
-        className="w-full object-cover object-center lg:h-auto lg:w-1/2"
+        alt="me holding an owl in nara, japan"
+        className="max-h-screen w-full object-cover object-center lg:absolute lg:left-0 lg:h-full lg:w-1/2"
       />
-      <div className="px-8 py-24 lg:w-1/2 lg:pl-8">
-        <h1 className="text-4xl">About Me</h1>
-        <p className="leading-relaxed">My name is Shawn McLaughlin.</p>
-        <p className="leading-relaxed">
-          I am a self-driven, results oriented senior software engineer focused on building
-          efficient, resilient systems using a variety of technologies. I am motivated by learning
-          new technologies, writing clean test-driven code, and delivering high-quality software.
-        </p>
-        <p className="leading-relaxed">
-          Ever since I was a kid, I've always been fascinated with computers. I started coding at 16
-          when my high school offered an introduction to programming course. Writing those early
-          java programs, I loved the feeling of creating something from just the thoughts and ideas
-          in my head. I was hooked and I knew I wanted to write code for a living. I went to college
-          for computer science and never looked back.
-        </p>
-        <p>
-          I studied at Temple University where I received a degree in Computer Science. I've also
-          pass the N3 level of the Japanese Language Proficiency Test
-        </p>
-        <p className="leading-relaxed">
-          Currently, I live and work in the greater Philadelphia area.
-        </p>
+      <div className="mx-auto h-fit w-11/12 max-w-7xl py-24 2xl:w-4/5">
+        <div className="w-full lg:ml-auto lg:w-1/2 lg:basis-1/2 lg:pl-10">
+          <h1 className="text-4xl">About</h1>
+          <p className="leading-relaxed">My name is Shawn McLaughlin.</p>
+          <p className="leading-relaxed">
+            I'm a senior software engineer living and working in the greater Philadelphia area. I
+            love learning new technologies, solving interesting problems, and building awesome stuff
+            with code.
+          </p>
+          <p className="leading-relaxed">
+            I began coding in high school, building simple HTML websites and writing small console
+            apps in Java. What drew me to coding was the the challenge and creativity that came with
+            taking complex ideas, breaking them down, and then making them come to life with
+            technology.
+          </p>
+          <p>
+            I studied at Temple University where I graduated with a Bachelors of Science in Computer
+            Science. Since then I've worked as a professional software engineer for a variety of
+            companies solving challenging problems, meeting cool people, and building awesome
+            software.
+          </p>
+          <p>
+            Outside of coding, I am a husband and father, I have passed the N3 level of the Japanese
+            Language Proficiency Test, and I enjoy playing video games (particularly fighting
+            games).
+          </p>
+        </div>
       </div>
     </section>
   );

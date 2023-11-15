@@ -13,7 +13,7 @@ export default function AboutMe() {
         className="max-h-screen w-full object-cover object-center lg:absolute lg:left-0 lg:h-full lg:w-1/2"
       />
       <div className="mx-auto h-fit w-11/12 max-w-7xl py-24 2xl:w-4/5">
-        <div className="w-full lg:ml-auto lg:w-1/2 lg:basis-1/2 lg:pl-10">
+        <div className="w-full space-y-4 lg:ml-auto lg:w-1/2 lg:basis-1/2 lg:pl-10">
           <h1 className="text-4xl">About</h1>
           <p className="leading-relaxed">My name is Shawn McLaughlin.</p>
           <p className="leading-relaxed">

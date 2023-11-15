@@ -25,9 +25,9 @@ export default function SkillCard(props: SkillCardProps) {
   return (
     <div className="overflow-hidden rounded-lg border bg-white px-4 py-4 shadow-lg">
       <div className="flex w-full flex-col gap-2">
-        <div className="flex items-center justify-between gap-8 px-2">
+        <div className="flex items-center justify-between px-2">
           <div className="text-start text-sky-600">{skill.icon && skill.icon({ size: 40 })}</div>
-          <div className="flex-grow text-center">{skill.name}</div>
+          <div className="flex-grow overflow-hidden text-center">{skill.name}</div>
         </div>
         <div className="w-full">{renderSkillMeter(skill.skillLevel)}</div>
       </div>

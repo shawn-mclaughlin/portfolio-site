@@ -82,7 +82,7 @@ export default function Skills() {
   return (
     <section id="skillset" className="mx-auto w-11/12 max-w-7xl scroll-mt-24 py-24 2xl:w-4/5">
       <h1 className="mb-4 text-4xl">Skillset</h1>
-      <div className="grid place-items-center gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {skills.map((skill, index) => (
           <div className="w-full">
             <SkillCard key={index} skill={skill} />

@@ -3,6 +3,7 @@ import Subsection from "./common/subsection.tsx";
 import Skills from "./skills/skills.tsx";
 import CareerTimeline from "./career/career-timeline.tsx";
 import AboutMe from "./about/about.tsx";
+import Footer from "./footer/footer.tsx";
 
 export default function App() {
   const sections = [
@@ -27,6 +28,7 @@ export default function App() {
           );
         })}
       </main>
+      <Footer />
     </div>
   );
 }

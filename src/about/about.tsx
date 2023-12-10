@@ -22,18 +22,12 @@ export default function AboutMe() {
             with code.
           </p>
           <p className="leading-relaxed">
-            I began coding in high school, building simple HTML websites and writing small console
-            apps in Java. What drew me to coding was the the challenge and creativity that came with
-            taking complex ideas, breaking them down, and then making them come to life with
-            technology.
-          </p>
-          <p>
             I studied at Temple University where I graduated with a Bachelors of Science in Computer
             Science. Since then I've worked as a professional software engineer for a variety of
             companies solving challenging problems, meeting cool people, and building awesome
             software.
           </p>
-          <p>
+          <p className="leading-relaxed">
             Outside of coding, I am a husband and father, I have passed the N3 level of the Japanese
             Language Proficiency Test, and I enjoy playing video games (particularly fighting
             games).

@@ -3,7 +3,6 @@ import { FaBars } from "react-icons/fa";
 
 export default function NavBar() {
   const [expanded, setExpanded] = useState(false);
-  console.log("render");
 
   const handleItemClick = () => {
     setExpanded(false);
@@ -12,7 +11,7 @@ export default function NavBar() {
   const navLinks = (
     <>
       <a href="#about" onClick={handleItemClick}>
-        About Me
+        About
       </a>
       <a href="#skillset" onClick={handleItemClick}>
         Skillset

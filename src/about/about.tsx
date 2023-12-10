@@ -1,10 +1,4 @@
 export default function AboutMe() {
-  //TODO Look into tailwind typography package
-
-  //TODO Rewrite this section
-
-  //TODO Ideally, I want the typography to use the same margin logic as the navbar but starting from
-  // the 1/2 and then have the image run to the left edge without a leading margin
   return (
     <section id="about" className="relative scroll-mt-24 lg:flex">
       <img

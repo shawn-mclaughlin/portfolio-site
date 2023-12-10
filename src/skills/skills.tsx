@@ -3,11 +3,15 @@ import {
   SiGo,
   SiCsharp,
   SiMongodb,
-  SiMysql,
   SiReact,
   SiHtml5,
   SiCss3,
   SiTailwindcss,
+  SiMicrosoftsqlserver,
+  SiPostgresql,
+  SiJavascript,
+  SiTypescript,
+  SiCplusplus,
 } from "react-icons/si";
 import SkillCard from "./skill-card.tsx";
 
@@ -22,12 +26,28 @@ export default function Skills() {
       icon: SiCsharp,
     },
     {
+      name: "Javascript",
+      icon: SiJavascript,
+    },
+    {
+      name: "Typescript",
+      icon: SiTypescript,
+    },
+    {
+      name: "C++",
+      icon: SiCplusplus,
+    },
+    {
       name: "MongoDB",
       icon: SiMongodb,
     },
     {
-      name: "SQL",
-      icon: SiMysql,
+      name: "SQL Server",
+      icon: SiMicrosoftsqlserver,
+    },
+    {
+      name: "PostgreSQL",
+      icon: SiPostgresql,
     },
     {
       name: "React",

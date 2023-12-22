@@ -3,16 +3,15 @@ export default function AboutMe() {
     <section id="about" className="scroll-mt-24">
       <div className="mx-auto h-fit w-11/12 max-w-7xl py-4 2xl:w-4/5">
         <h1 className="mb-4 text-4xl">About me</h1>
-
-        <div className="flex flex-col items-center gap-8 md:flex-row">
-          <div className="md:w-1/2">
+        <div className="flex w-full flex-col items-center gap-8 md:flex-row">
+          <div className="w-fit">
             <img
               src="src/about/me-and-owl.jpg"
               alt="me holding an owl in nara, japan"
-              className="rounded-full object-cover object-center"
+              className="h-auto max-w-xs rounded-full object-cover object-center"
             />
           </div>
-          <div className="space-y-4 md:w-1/2">
+          <div className="grow space-y-4">
             <p className="leading-relaxed">My name is Shawn McLaughlin</p>
             <p className="leading-relaxed">
               I'm a senior software engineer living and working in the greater Philadelphia area. I

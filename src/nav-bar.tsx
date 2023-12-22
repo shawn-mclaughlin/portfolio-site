@@ -16,9 +16,6 @@ export default function NavBar() {
       <a href="#skillset" onClick={handleItemClick}>
         Skillset
       </a>
-      <a href="#career" onClick={handleItemClick}>
-        Career
-      </a>
     </>
   );
 

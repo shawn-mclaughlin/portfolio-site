@@ -33,11 +33,6 @@ export default function NavBar() {
           <div className="text-center text-2xl">
             <a href="#">Shawn McLaughlin</a>
           </div>
-          <div className="text-end">
-            <a href="#contact">
-              <button className="rounded-md border-2 px-3 py-1.5 md:py-2">Contact</button>
-            </a>
-          </div>
         </div>
         <nav
           className={`flex flex-col gap-4 overflow-hidden transition-[max-height] duration-300 ease-in md:hidden ${

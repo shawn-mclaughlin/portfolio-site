@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer id="footer">
       <hr />
-      <div className="flex flex-col items-center justify-center gap-4 py-10">
+      <div className="flex flex-col items-center justify-center gap-4 py-10 text-gray-600">
         <ul className="flex items-center gap-4">
           <li>
             <a href="https://github.com/shawn-mclaughlin" target="_blank">

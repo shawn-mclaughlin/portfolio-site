@@ -26,8 +26,8 @@ export default function AboutMe() {
             </p>
             <p className="leading-relaxed">
               Outside of coding, I am a husband and father, I have passed the N3 level of the
-              Japanese Language Proficiency Test, and I enjoy playing video games (particularly
-              fighting games).
+              Japanese Language Proficiency Test, and I enjoy playing video games; particularly
+              fighting games.
             </p>
           </div>
         </div>

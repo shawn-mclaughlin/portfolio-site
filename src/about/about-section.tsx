@@ -1,3 +1,5 @@
+import OwlPicture from "./me-and-owl.jpg";
+
 export default function AboutMe() {
   return (
     <section id="about" className="scroll-mt-24">
@@ -6,7 +8,7 @@ export default function AboutMe() {
         <div className="flex w-full flex-col items-center gap-8 md:flex-row">
           <div className="w-fit">
             <img
-              src="src/about/me-and-owl.jpg"
+              src={OwlPicture}
               alt="me holding an owl in nara, japan"
               className="h-auto max-w-xs rounded-full object-cover object-center"
             />

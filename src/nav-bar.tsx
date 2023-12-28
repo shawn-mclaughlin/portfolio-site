@@ -13,8 +13,8 @@ export default function NavBar() {
       <a href="#about" onClick={handleItemClick}>
         About
       </a>
-      <a href="#skillset" onClick={handleItemClick}>
-        Skillset
+      <a href="#skills" onClick={handleItemClick}>
+        Skills
       </a>
     </>
   );

@@ -1,14 +1,14 @@
 import NavBar from "./nav-bar.tsx";
-import Skills from "./skills/skills.tsx";
-import AboutMe from "./about/about.tsx";
+import SkillsSection from "./skills/skills-section.tsx";
+import AboutSection from "./about/about-section.tsx";
 import Footer from "./footer/footer.tsx";
 
 export default function App() {
   return (
     <div className="min-h-screen antialiased">
       <NavBar />
-      <AboutMe />
-      <Skills />
+      <AboutSection />
+      <SkillsSection />
       <Footer />
     </div>
   );

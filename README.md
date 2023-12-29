@@ -1,6 +1,7 @@
 # Portfolio Site
 
-This is a website to showcase my skill set and portfolio as a software developer.
+This is a website to showcase my skill set and portfolio as a software developer. You can visit the site
+at https://www.shawnmclaughlin.dev/
 
 ## Technologies
 

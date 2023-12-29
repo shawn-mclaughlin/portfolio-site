@@ -10,4 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout latest code"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: "Use Node 20"
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: "Build project"
+        run:
+          npm install
+          npm run build

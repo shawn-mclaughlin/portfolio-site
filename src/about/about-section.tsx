@@ -27,7 +27,7 @@ export default function AboutMe() {
               awesome software.
             </p>
             <p className="leading-relaxed">
-              Outside of coding, I am a husband and father, I have passed the N3 level of the
+              Outside of coding, I am a husband and father, I have passed the N2 level of the
               Japanese Language Proficiency Test, and I enjoy playing video games; particularly
               fighting games.
             </p>
